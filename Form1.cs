@@ -21,5 +21,10 @@ namespace UPA_Zkouska
         {
             
         }
+
+        private void ButtonCalculate_Click(object sender, EventArgs e)
+        {
+            TextBoxMolarAmount.Text = ChemMath.ToMolarAmount(double.Parse(textBoxWeight.Text), double.Parse(textBoxMolarWeight.Text)).ToString();
+        }
     }
 }

@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace UPA_Zkouska
 {
-    internal class ChemMath
+    public class ChemMath
     {
-        public double ToMolarAmount(double weight, double molarMass)
+        public static double ToMolarAmount(double weight, double molarMass)
         {
             return weight / molarMass;
         }
 
-        public double ToMolarConcentration(double molarAmount, double volume)
+        public static double ToMolarConcentration(double molarAmount, double volume)
         {
             return molarAmount / volume;
         }
+
     }
 }
